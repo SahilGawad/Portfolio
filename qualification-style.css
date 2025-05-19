@@ -1,0 +1,97 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #373434;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  padding: 20px 60px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
+.logo span {
+  color: #ff004f;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #ff004f;
+}
+
+/* Qualification Section */
+.qualification-section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.qualification-container h1 {
+  font-size: 3rem;
+  color: #ff004f;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.qualification-item {
+  background: #1a1a1a;
+  padding: 20px 30px;
+  border-left: 6px solid #ff004f;
+  margin-bottom: 25px;
+  border-radius: 10px;
+}
+
+.qualification-item h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.qualification-item p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin: 6px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .qualification-container h1 {
+    font-size: 2.4rem;
+  }
+
+  .qualification-item h2 {
+    font-size: 1.6rem;
+  }
+
+  .qualification-item p {
+    font-size: 1rem;
+  }
+}
